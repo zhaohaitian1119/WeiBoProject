@@ -54,7 +54,7 @@ public class UserAddController {
         } else {
             model.addAttribute("error", "请选择头像");
         }
-        return "UsersAdd";
+        return "redirect:/sjl/toAdmin";
     }
 
 }

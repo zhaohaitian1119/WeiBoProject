@@ -15,7 +15,7 @@
 </head>
 <body>
 <p>
-    <span style="margin-left: 60px;">${user.username}&nbsp;你好！欢迎访问微博信息管理系统</span><a style="margin-left: 1000px;" href="">注销</a>
+    <span style="margin-left: 60px;"><%--${user.username}--%>test&nbsp;你好！欢迎访问微博信息管理系统</span><a style="margin-left: 1000px;" href="">注销</a>
 </p>
 <div style="margin-left: 60px;margin-top:60px;width: 300px;height:200px;border: 1px solid red">
 <p align="center" style="margin-top: 50px;">
@@ -37,7 +37,7 @@
     </tr>
     <c:forEach items="${pageInfo.list}" var="item">
         <tr>
-            <td><img src="/static/uploadfiles/${item.picpath}" style="width: 50px;height: 50px;"></td>
+            <td><img src="${item.picpath}" style="width: 50px;height: 50px;"></td>
             <td>${item.content}</td>
             <td><fmt:formatDate pattern="yyyy-MM-dd" value="${item.publicshtime}" type="both"/></td>
             <td><a href="/delBlog?id=${item.id}">删除</a></td>
