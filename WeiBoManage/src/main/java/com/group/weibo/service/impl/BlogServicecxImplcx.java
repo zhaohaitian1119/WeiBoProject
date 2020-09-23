@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-@Service("blogService")
+@Service("blogServicecx")
 public class BlogServicecxImplcx implements BlogServicecx {
     @Resource
     BlogMapper blogMapper;

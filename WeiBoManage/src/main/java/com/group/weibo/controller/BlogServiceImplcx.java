@@ -13,6 +13,11 @@ public class BlogServiceImplcx {
     @Resource
     BlogServicecx blogServicecx;
 
+    @RequestMapping("/toBlogcx")
+    public String toBlogcx(){
+        return "addBlogcx";
+    }
+
     @RequestMapping("/addBlogcx")
     public String addBlogcx(Blog blog, String content){
         //用户id
@@ -24,7 +29,7 @@ public class BlogServiceImplcx {
         int i=blogServicecx.addBlog(blog);
         if(i>0){
             //添加成功跳转
-            return "addSuccessTestcx";
+            return "redirect:/toblog";
         }
         return "addBlogcx";
     }

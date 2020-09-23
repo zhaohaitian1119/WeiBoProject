@@ -52,7 +52,7 @@ public class BlogServiceController {
 
     @RequestMapping("/fabu")
     public String fabu(){
-        return "blogAdd";
+        return "redirect:/toBlogcx";
     }
 
     @RequestMapping("/doBlogAdd")
@@ -64,5 +64,10 @@ public class BlogServiceController {
         blog.setPublicshtime(new Date());
         blogService.add(blog);
         return "redirect:/toblog";
+    }
+
+    @RequestMapping("/toUser")
+    public String toUser(){
+        return "redirect:/sjl/toAdmin";
     }
 }

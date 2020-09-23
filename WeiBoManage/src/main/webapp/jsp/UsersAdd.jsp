@@ -12,9 +12,12 @@
 </head>
 <script type="text/javascript" src="/static/js/jquery-1.12.4.js"></script>
 <body>
+<p>
+    <span style="margin-left: 60px;"><%--${user.username}--%>test&nbsp;你好！欢迎访问微博信息管理系统</span><a style="margin-left: 1000px;" href="">注销</a>
+</p>
 <p align="center">
-    <a href="#">微博管理</a><br/>
-    <a href="#">账户管理</a>
+    <a href="/toblog">微博管理</a><br/>
+    <a href="/sjl/toAdmin">账户管理</a>
 </p>
 <p align="center" id="error" style="color: red;">${error}</p>
 <form action="/jjs/doadd" method="post" enctype="multipart/form-data">
